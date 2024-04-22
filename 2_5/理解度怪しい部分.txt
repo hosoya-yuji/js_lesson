@@ -1,0 +1,10 @@
+  <input type="text" id="value">
+  <input type="button" id="button" value="ボタン">
+  <div id="box">
+
+https://html-coding.co.jp/annex/dictionary/html/input/#demo01
+「INPUT」とは、<form>タグで作成したフォームの中でテキスト入力欄やボタンなどの部品を作成する要素です。
+type="text"：1行テキストボックスを作る。
+
+
+  var text = $('#value').val();
