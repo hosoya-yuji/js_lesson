@@ -1,0 +1,10 @@
+ $("#button").on("click", function() {
+      $("#button").animate({Left:'500px', Top:'300px' },2000);
+にしていたが全く反応してなかった以下書き換えたところ動くようになった。
+
+
+$("#button").on("click", function() {
+      $("#button").animate({marginLeft:'500px', marginTop:'300px' },2000);
+
+
+原因：CSSにpositionが指定されていないためmarginの記載のないleftやtopは反応しなかった。
